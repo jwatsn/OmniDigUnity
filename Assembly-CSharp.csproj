@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{390758A0-15C1-DB75-6C74-E79383C64C0D}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_2;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\BiomeManager.cs" />
+     <Compile Include="Assets\Biomes.cs" />
+     <Compile Include="Assets\Console.cs" />
+     <Compile Include="Assets\Drawing.cs" />
+     <Compile Include="Assets\Events\BlockEvent.cs" />
+     <Compile Include="Assets\Events\ChatEvent.cs" />
+     <Compile Include="Assets\Events\ConnectEvent.cs" />
+     <Compile Include="Assets\Events\CreateChunkEvent.cs" />
+     <Compile Include="Assets\Events\DamageEvent.cs" />
+     <Compile Include="Assets\Events\DestroyEvent.cs" />
+     <Compile Include="Assets\Events\InputEvent.cs" />
+     <Compile Include="Assets\Events\InventoryEvent.cs" />
+     <Compile Include="Assets\Events\LoadItem.cs" />
+     <Compile Include="Assets\Events\MountEvent.cs" />
+     <Compile Include="Assets\Events\NetworkEvent.cs" />
+     <Compile Include="Assets\Events\OmniEvent.cs" />
+     <Compile Include="Assets\Events\RChunkEvent.cs" />
+     <Compile Include="Assets\Events\SpawnEvent.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPAnimationEx.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPMeshAnimationEx.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPMeshSpriteAnimationEx.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPMeshTextureEx.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPMeshTextureNoHelperEx.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPSkinnedMeshTextureEx.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPSpriteAnimationEx.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPSpriteEx.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPSpriteTextureEx.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPStaticSpriteEx.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\TPCore\Helpers\TPAtlasesData.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\TPCore\Helpers\TPHelper.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\TPCore\Templates\TPFlags.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\AnimationApiTest.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\AtlasGUIAnimationExample.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\AtlasGUIExample.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\Atlases.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\MyAtlasController.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\MyFireAnimation.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\MyMeshTexture.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\MyRotation.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\MyTeslaAnimation.cs" />
+     <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\MyTextures.cs" />
+     <Compile Include="Assets\FPSUpdater.cs" />
+     <Compile Include="Assets\GUICreateWorld.cs" />
+     <Compile Include="Assets\OmniAnimSkeleton.cs" />
+     <Compile Include="Assets\OmniAnimation.cs" />
+     <Compile Include="Assets\OmniArmor.cs" />
+     <Compile Include="Assets\OmniAtlas.cs" />
+     <Compile Include="Assets\OmniBlock.cs" />
+     <Compile Include="Assets\OmniBow.cs" />
+     <Compile Include="Assets\OmniCamera.cs" />
+     <Compile Include="Assets\OmniChatBox.cs" />
+     <Compile Include="Assets\OmniClientNetwork.cs" />
+     <Compile Include="Assets\OmniCreateCharacterNet.cs" />
+     <Compile Include="Assets\OmniDamageable.cs" />
+     <Compile Include="Assets\OmniDataBlocks.cs" />
+     <Compile Include="Assets\OmniDeployable.cs" />
+     <Compile Include="Assets\OmniEvents.cs" />
+     <Compile Include="Assets\OmniFlyable.cs" />
+     <Compile Include="Assets\OmniFlyingItem.cs" />
+     <Compile Include="Assets\OmniGUI.cs" />
+     <Compile Include="Assets\OmniGUIManager.cs" />
+     <Compile Include="Assets\OmniGhost.cs" />
+     <Compile Include="Assets\OmniHuman.cs" />
+     <Compile Include="Assets\OmniInterpolate.cs" />
+     <Compile Include="Assets\OmniInventory.cs" />
+     <Compile Include="Assets\OmniItemObject.cs" />
+     <Compile Include="Assets\OmniItemType.cs" />
+     <Compile Include="Assets\OmniItems.cs" />
+     <Compile Include="Assets\OmniJetpack.cs" />
+     <Compile Include="Assets\OmniLocal.cs" />
+     <Compile Include="Assets\OmniMountable.cs" />
+     <Compile Include="Assets\OmniNetwork.cs" />
+     <Compile Include="Assets\OmniObjs\ClientControllable.cs" />
+     <Compile Include="Assets\OmniObjs\ContainerObject.cs" />
+     <Compile Include="Assets\OmniObjs\ControllableObject.cs" />
+     <Compile Include="Assets\OmniObjs\DamageableObject.cs" />
+     <Compile Include="Assets\OmniObjs\GhostObject.cs" />
+     <Compile Include="Assets\OmniObjs\OmniObject.cs" />
+     <Compile Include="Assets\OmniObjs\PhysicsObject.cs" />
+     <Compile Include="Assets\OmniObjs\ProjectileObject.cs" />
+     <Compile Include="Assets\OmniObjs\VehicleObject.cs" />
+     <Compile Include="Assets\OmniPickaxe.cs" />
+     <Compile Include="Assets\OmniQuickBar.cs" />
+     <Compile Include="Assets\OmniSaveManager.cs" />
+     <Compile Include="Assets\OmniServerBrowser.cs" />
+     <Compile Include="Assets\OmniSuperPickaxe.cs" />
+     <Compile Include="Assets\OmniSword.cs" />
+     <Compile Include="Assets\OmniTerrain.cs" />
+     <Compile Include="Assets\OmniWorld.cs" />
+     <Compile Include="Assets\TerrainChunk.cs" />
+     <None Include="Assets\Resources\OmniShader.shader" />
+     <None Include="Assets\Resources\World_data.txt" />
+     <None Include="Assets\Extensions\TexturePacker\Tutorial\Resources\example_data.txt" />
+     <None Include="Assets\Extensions\TexturePacker\Tutorial\Resources\TutorialAtlas_data.txt" />
+ <Reference Include="TexturePacker">
+ <HintPath>Assets\Extensions\TexturePacker\Lib\TexturePacker.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
